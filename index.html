@@ -17,6 +17,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+      <div class="loader-content">
+        <div class="loader-heart">💖</div>
+        <h2 class="loader-text">Loading Magic...</h2>
+        <div class="loader-spinner"></div>
+      </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="musicPlayer">
+      <button class="music-toggle" id="musicToggle" title="Play Music">
+        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8 5v14l11-7z" />
+        </svg>
+        <svg
+          class="pause-icon"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          style="display: none"
+        >
+          <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+        </svg>
+      </button>
+      <span class="music-label">🎵 Music</span>
+    </div>
+
+    <!-- Floating Particles Container -->
+    <div class="particles-container" id="particlesContainer"></div>
     <!-- Animated Background -->
     <div class="background-animation">
       <div class="stars"></div>
@@ -236,5 +268,6 @@
 
     <script src="script.js"></script>
     <script src="photo-3d.js"></script>
+    <script src="enhancements.js"></script>
   </body>
 </html>
